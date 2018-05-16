@@ -1,8 +1,8 @@
 # laravel-jsonschema-request
-Server side form validation using JSON Schema
+Laravel Server side form validation using JSON Schema
 
 ## Install
-    composer install amiralii/jsonschema-request
+    composer require amiralii/jsonschema-request
 
 ## How to use
 1. Create a form request class as you would with artisan: php artisan make:request PersonRequest

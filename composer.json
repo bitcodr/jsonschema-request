@@ -1,6 +1,6 @@
 {
     "name": "amiralii/jsonschema-request",
-    "description": "Server side form validation using JSON Schema",
+    "description": "Laravel Server side form validation using JSON Schema",
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "^5.4",
