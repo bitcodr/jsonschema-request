@@ -1,0 +1,14 @@
+
+
+Code Coverage Report:    
+  2016-07-07 19:23:22    
+                         
+ Summary:                
+  Classes:  0.00% (0/3)  
+  Methods: 54.55% (6/11) 
+  Lines:   76.47% (26/34)
+
+\SchemaRequest::Factory
+  Methods:  50.00% ( 1/ 2)   Lines:  80.00% (  8/ 10)
+\SchemaRequest::SchemaValidator
+  Methods:  62.50% ( 5/ 8)   Lines:  85.71% ( 18/ 21)
