@@ -52,5 +52,4 @@ class PersonFormRequest extends Request
 
 ```
 
-## old version 
-    https://github.com/aaronbullard/laravel-schemarequest
+
