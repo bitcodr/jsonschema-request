@@ -1,0 +1,33 @@
+{
+    "name": "amiralii/jsonschema-request",
+    "description": "Laravel Server side form validation using JSON Schema",
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "^5.4",
+        "justinrainbow/json-schema": "^5.2",
+        "dingo/api": "1.0.*@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1",
+        "mockery/mockery": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [ 
+        {
+            "name": "amiralii",
+            "email": "mr.roshanae@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "SchemaRequest\\": "src/"
+        },
+        "classmap": [
+            "tests"    
+        ]
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always --coverage-html=./coverage --coverage-text=tests/summary.txt"
+    }
+}
