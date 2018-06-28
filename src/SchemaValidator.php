@@ -2,10 +2,11 @@
 
 namespace SchemaRequest;
 
-use StdClass, RuntimeException;
 use JsonSchema\Validator;
-use Illuminate\Contracts\Validation\Validator as ValidatorContract;
+use StdClass, RuntimeException;
 use Illuminate\Support\MessageBag;
+use Dingo\Api\Exception\ResourceException;
+use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 
 class SchemaValidator implements ValidatorContract
 {
@@ -42,6 +43,12 @@ class SchemaValidator implements ValidatorContract
             foreach($this->validator->getErrors() as $error){
                 $message = ucfirst($error['message']) . ".";
                 $this->errors->add($error['property'], $message);
+            }
+            if(!$this->validator->isValid())
+            {
+                $validation = $this->errors->all();
+                $showError = (isset($validation[0])) ? $validation[0] : "error";
+                throw new ResourceException($showError, $validation);                
             }
         }
 
